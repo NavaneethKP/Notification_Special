@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         //SET STYLE FOR BIGTEXT
         NotificationCompat.BigTextStyle style=new NotificationCompat.BigTextStyle();
         style.setBigContentTitle("Special Activity BigText Notification");
+        style.setSummaryText("Summary Text");
         style.bigText(contenttext);
 
         //BUILDING THE BIGTEXT NOTIFICATION
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ISSUE THE NOTIFICATION USING NOTIFICATION MANAGER
         NotificationManager nm=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.notify(1,builder.build());
+        nm.notify(2,builder.build());
 
 
     }
@@ -145,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ISSUE THE NOTIFICATION USING NOTIFICATION MANAGER
         NotificationManager nm=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.notify(1,builder.build());
+        nm.notify(3,builder.build());
 
     }
 
@@ -154,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         //SET STYLE FOR INBOX
         NotificationCompat.InboxStyle style=new NotificationCompat.InboxStyle();
         style.setBigContentTitle("Inbox Special Notification");
+        style.setSummaryText("Inbox");
         style.addLine("Line one");
         style.addLine("Line two");
 
@@ -188,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ISSUE THE NOTIFICATION USING NOTIFICATION MANAGER
         NotificationManager nm=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.notify(1,builder.build());
+        nm.notify(4,builder.build());
     }
 
 
